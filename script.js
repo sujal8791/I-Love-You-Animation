@@ -1,4 +1,4 @@
-const text = "I Love You Soo Much";
+const text = "I Love You Soo Much Hansuu";
 let index = 0;
 
 function typeAnimation() {
