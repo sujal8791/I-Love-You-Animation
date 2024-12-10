@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: #ff4d6d;
+  position: relative;
+  margin: 20px auto;
+  transform: rotate(-45deg);
+  animation: glow 1.5s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: #ff4d6d;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 50px;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 15px 5px rgba(255, 77, 109, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px 10px rgba(255, 77, 109, 0.8);
+  }
+                                   }
